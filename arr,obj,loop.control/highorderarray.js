@@ -55,9 +55,42 @@ for (const key in obj) {
 /// FOR EACH loop
 const arrr = [1,2,3,4,5,6,7]
 arrr.forEach(function (elements) {
-    console.log(elements)
+    //console.log(elements)
 });
 //by arrow function
-arrr.forEach((item)=> {
-    console.log(item);
+ arrr.forEach((item)=> {
+    // console.log(item);
+ } );
+
+arrr.forEach((item, index, arrr)=> {
+    //console.log(item,index,arr);
 } )
+
+const array1 = [
+    {
+        name: "aryaman",
+        age: 21
+    },
+    {
+        name: "yashasvi",
+        age: 20
+    },
+    {
+        name: "jayesh",
+        age: 20
+    }
+]
+array1.forEach((items) => {
+    console.log(`name = ${items.name} age = ${items.age}`)
+    
+});
+
+array1.forEach((items) => {
+    console.log(`bla bla ${JSON.stringify(items)}`)
+});
+array1.forEach((items) => {
+    console.log("hiii", items)
+});
+array1.forEach((items) => {
+    console.log(`how you doin ${items}`)
+});
