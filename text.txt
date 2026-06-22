@@ -1,0 +1,12 @@
+//async await
+//promise
+//event loop
+
+//req, res, next 
+//cors
+//req.params, req.body
+//session
+//jwt
+
+//mondb crud 
+to do
