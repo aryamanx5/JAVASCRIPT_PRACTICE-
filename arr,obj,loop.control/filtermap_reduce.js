@@ -47,8 +47,46 @@ const books = [
   
 //chaining
 
-const abc = [1,2,3,5,6,7,8,9,10]
+const abc = [1,2,3,5]
 let hi = abc.map((bye) => bye * 10).map((bye)=>bye*10).filter((bye)=> bye > 300 && bye < 900);
-console.log(hi);
+//console.log(hi);
+
+//Reduce
+
+let hello = abc.reduce((accumulator, currentval) => { (accumulator + currentval)
+    //console.log(`acc = ${accumulator} currentval = ${currentval}`)
+    return accumulator + currentval;}, 0)
+
+//console.log("final value =", hello);
+ //or
+ let jjj = abc.reduce((accumulator, currentval) => (accumulator + currentval), 0 )
+//console.log("one more way to get final val = ", jjj);
+
+
+let pills = [
+    {headache: "saridon",
+     price : 79
+    },
+    {fever: "dolo650",
+     price : 150
+    },
+    {stomachache : "pan D",
+     price : 108
+    }
+]
+const total = pills.reduce((acc,meds) => acc+ meds.price, 0)
+console.log(total)
+const totalbill= pills.reduce((acc, meds) => {
+    if (meds.price < 150){
+        acc+=meds.price
+    }
+    return acc;
+}, 0)
+console.log(totalbill);
+
+
+
+ 
+
 
 
