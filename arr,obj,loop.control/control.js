@@ -26,11 +26,13 @@ let iceprice = 100
 
 switch (iceprice) {
     case 50:
-        console.log("icecream is cheap");
+        //console.log("icecream is cheap");
         break;
     case 100:
-        console.log("icecream is expensive");
+        //console.log("icecream is expensive");
         break;
     default:
-        console.log("icecream is not available");
+        //  console.log("icecream is not available");
 }
+
+

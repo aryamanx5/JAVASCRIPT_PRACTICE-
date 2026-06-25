@@ -94,3 +94,5 @@ array1.forEach((items) => {
 array1.forEach((items) => {
     console.log(`how you doin ${items}`)
 });
+
+arr = []

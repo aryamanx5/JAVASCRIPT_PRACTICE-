@@ -56,15 +56,3 @@ const aad = (num1, num2) => ({ username: "Guest", sum: num1 + num2 });
 // ((name) => {
 //     console.log(`this is an IIFE function ${name}`);
 // })('Aryaman');
-function aa (){
-    console.log("this is a function");
-    two();
-}
-function two(){
-    console.log("this is another function");
-    three();
-}
-function three(){
-    console.log("this is the third function");
-}
-aa();
